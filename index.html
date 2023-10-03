@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login em sass</title>
+</head>
+<body>
+    <section class="container">
+        <div class="register">
+            <h2 class="register__title">BEM VINDO</h2>
+            <h3 class="register__subtitle">Novo Login</h3>
+            <butto class="register__button">Criar Conta</butto>
+        </div>
+        <div class="login">
+            <h2 class="login__title">FAÇA LOGIN</h2>
+            <div class="user">
+                <label class="user__label" for="user"><img class="label__image" src="../image/icons8-user-96.png" alt="user"></label>
+                <input class="user__input" placeholder="username" type="text" name="user" id="user">
+            </div>
+            <div class="password">
+                <label class="password__label" for="password"><img  class="label__image" src="../image/icons8-trancar-250.png" alt="cadeado da senha"></label>
+                <input class="password__input" placeholder="*******" type="password" name="password" id="password">
+            </div>
+            <div class="auxiliares">
+                <input class="check__lembrar" type="checkbox" name="lembrar" id="lembrar">
+                <label class="check__label" for="lembrar"> lembrar</label>
+                <a class="esqueci" href="#">Esqueceu a senha?</a>
+            </div>
+        
+        <button class="logar">Entrar</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import './variable/colors/color.scss';
+@import './variable/comons/common.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(28deg, #FF4A12 10%, #A006FA 58%);
+}
+.container{
+    height: 55vh;
+    width: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 100px 0px #000000;
+    border-radius: 23px;
+
+}
+.register{
+    border-radius: 23px 0px 0px 23px;
+    background-color: rgba(215, 205, 232, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid #29294F;
+}
+.register__title{
+    padding: 120px 0px 60px 0px;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: $font;
+}
+.register__subtitle{
+    @extend .register__title;
+    font-weight: 700;
+    font-size: 50px;
+    padding: 0px 0px 30px 0px;
+    font-size: 36px;
+    text-decoration: overline;
+}
+.register__button{
+    margin: 30px;
+    background-color: $button;
+    color: $branco;
+    font-size: 18px;
+    font-family: $font;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px 5px #29294F;
+    cursor: pointer;
+}
+.login{
+    background-color: rgba(215, 205, 232, 0.5);
+    border-radius: 0px 23px 23px 0px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.login__title{
+    @extend .register__title
+}
+.user{
+    display: flex;
+    padding: 2px;
+    background-color: $branco;
+    border-radius: 25px;
+}
+.user__input{
+    border: 0px;
+    font-size: 23px;
+    padding: 0px 15px;
+    background-color: $branco;
+    border-radius: 25px;
+    color: $button;
+}
+.user__input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0px none;
+    outline: 0;
+}
+.password{
+    @extend .user;
+    display: flex;
+}
+.password__input{
+    @extend .user__input;
+}
+.password__input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0px none;
+    outline: 0;
+}
+.label__image{
+    padding: 2px 15px;
+    height: 40px;
+    border-right: 1px solid #29294F;
+}
+.auxiliares{
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+.check__lembrar{
+    margin: 0px 4px;
+    background-color: $branco;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+}
+.check__label{
+    margin-right: 15px;
+    font-size: 20px;
+    color: $button;
+}
+.esqueci{
+    font-size: 17px;
+    color:$button ;
+}
+.logar{
+    background-color: $button;
+    color: $branco;
+    padding: 6px 60px;
+    border-radius: 8px;
+    font-family: $font;
+    font-size: 20px;
+}
+
+
+
